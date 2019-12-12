@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-
-
+// import FreindGen from 'logoFriend.png'
+import{ Link }from 'react-router-dom'
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -15,49 +15,43 @@ class Projects extends Component {
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
+            <CardTitle style={{color: 'black', height: '176px', background: 'url(https://raw.githubusercontent.com/prphntm63/friendgen/master/images/logo.png) center / cover'}} >FrenGen</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
+            FreindGen is an App that matches you to other users with similar interests in your immediate georaphical locale. And if you like, you can message your matches to connect.            </CardText>
             <CardActions border>
+              
               <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
+              
             </CardMenu>
           </Card>
 
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
+            <CardTitle style={{color: 'black', height: '176px', background: 'url(https://github.com/Gauraklein/attaboy/blob/master/testicon.png?raw=true) center / cover'}} >AttaBoy</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
+            Attaboy is a reddit Clone that allow users to view posts, collect attayboys -- likes, and interact with fellow users through attacomments.            </CardText>
             <CardActions border>
+              <Link to="https://github.com/ngalvin93/gitchofruits">
               <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              </Link>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
+              
             </CardMenu>
           </Card>
 
           {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
+            <CardTitle style={{color: 'black', height: '176px', background: 'url(https://images.all-free-download.com/images/graphicthumb/banana_310735.jpg) center / cover'}} >GetChoFruits</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
+            GitchoFruits is a fun project website produced by myself and 3 other team members that showcased our combined skills in HTML & CSS.            </CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
+              
             </CardMenu>
           </Card>
         </div>
@@ -86,10 +80,7 @@ class Projects extends Component {
     return(
       <div>
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>React</Tab>
-          <Tab>Angular</Tab>
-          <Tab>VueJS</Tab>
-          <Tab>MongoDB</Tab>
+          <Tab>Projects</Tab>
         </Tabs>
 
 
